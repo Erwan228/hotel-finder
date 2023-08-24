@@ -1,5 +1,12 @@
 <template>
-<FilterPanel/>>
+    <h1>
+        Search
+    </h1>
+    <h3>
+        Use the form to filter the hotels you wanna see
+    </h3>
+<FilterPanel/>
+<HotelList/>
 </template>
 
 <script>
