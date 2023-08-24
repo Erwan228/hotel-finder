@@ -1,2 +1,2 @@
-hotell finder. skal finne frem hotellene innenfor kriteriene du gir, i formen, slider for avstand, slider for pris, nei, det kommer ann på rommet på hotellet og når, det er for... internt og komplisert. jeg ser etter hotell basert på avstand
+hotell finder. skal finne frem hotellene innenfor kriteriene du gir, i formen, slider for avstand
 evt navn søk, sjekk w3 schools for prosess.
