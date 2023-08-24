@@ -1,10 +1,10 @@
 <template>
-
+<Form/>
 </template>
 
 <script>
 export default{
-
+ name: 'SearchView'
 }
 </script>
 
