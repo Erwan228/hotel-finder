@@ -1,10 +1,17 @@
 <template>
-<Form/>
+<FilterPanel/>>
 </template>
 
 <script>
+import FilterPanel from '../components/FilterPanel.vue'
+import HotelList from'../components/HotelList.vue'
+
 export default{
- name: 'SearchView'
+ name: 'SearchView',
+ components: {
+    FilterPanel,
+    HotelList
+ }
 }
 </script>
 
