@@ -1,0 +1,13 @@
+{
+    "hotels": [
+        {"name": "Dalen Hotel", "link": "https://www.dalenhotel.no/", "distance": 167},
+        {"name": "Storfjord Hotel", "link": "https://www.storfjordhotel.com/no/", "distance": 531},
+        {"name": "Panorama Hotell", "link": "https://panoramahotell.no/", "distance": 477},
+        {"name": "Hotel Union Øye", "link": "https://www.unionoye.no/no", "distance": 580},
+        {"name": "Copperhill Mountain Lodge", "link": "https://copperhill.se/", "distance": 685},
+        {"name": "Sund Nergården", "link": "https://sundnergarden.se/", "distance": 549},
+        {"name": "Clarion Hotel The Hub", "link": "https://www.strawberry.no/hotell/norge/oslo/clarion-hotel-the-hub/?utm_campaign=gmb-listing&utm_medium=organic&utm_source=google", "distance": 47},
+        {"name": "Thon Hotel Opera", "link": "https://www.thonhotels.no/hoteller/norge/oslo/thon-hotel-opera/?utm_source=google&utm_medium=infoboks&utm_campaign=GMB", "distance": 49},
+        {"name": "Scandic Ishavhotel", "link": "https://www.scandichotels.no/hotelreservation/select-rate?hotel=310&fromDate=2023-09-10&toDate=2023-09-11&room[0].adults=2&utm_source=gha&utm_medium=meta&utm_campaign=ppa&utm_id=google_ppa&utm_content=meta_ads&dsclid=55848482809331712", "distance": 1787}
+    ]
+}
