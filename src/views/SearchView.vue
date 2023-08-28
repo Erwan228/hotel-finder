@@ -5,8 +5,8 @@
     <h3>
         Use the form to filter the hotels you wanna see
     </h3>
-<FilterPanel/>
-<HotelList/>
+<FilterPanel v-model="selectedDistance"/>
+<HotelList :hotels="filteredHotels"/>
 </template>
 
 <script>
@@ -18,6 +18,23 @@ export default{
  components: {
     FilterPanel,
     HotelList
+ },
+ data() {
+    return{
+            selectedDistance: 500,
+            hotels: null,
+        }
+ },
+    mounted(){
+        fetch('http://localhost:3000/hotels')
+        .then(res => res.json())
+        .then(data => this.hotels = data)
+        .catch(err => console.log(err.message))
+ },
+    computed: {
+    filteredHotels() {
+        return this.hotels.filter(hotel => hotel.distance <= this.selectedDistance)
+    }
  }
 }
 </script>
