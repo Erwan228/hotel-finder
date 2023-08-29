@@ -22,19 +22,25 @@ export default{
  data() {
     return{
             selectedDistance: 500,
-            hotels: null,
+            hotels: [],
+            filteredHotels: [],
         }
  },
     mounted(){
         fetch('http://localhost:3000/hotels')
         .then(res => res.json())
-        .then(data => this.hotels = data)
+        .then(data => {
+      console.log("Fetched data:", data); // Log the fetched data
+      this.hotels = data;
+    })
         .catch(err => console.log(err.message))
  },
     computed: {
     filteredHotels() {
-        return this.hotels.filter(hotel => hotel.distance <= this.selectedDistance)
-    }
+            const filtered = this.hotels.filter(hotel => hotel.distance <= this.selectedDistance);
+            console.log("filtered hotels", filtered);
+            return filtered
+        }
  }
 }
 </script>

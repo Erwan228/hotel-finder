@@ -1,7 +1,7 @@
 <template>
 <div class="filterPanel">
     <form>
-        <input 
+        <input
         id="distance" 
         type="range" 
         min="20" 
@@ -9,7 +9,7 @@
         step="10"
         v-model="selectedDistance"
         style="width: 500px;"
-        /><br>
+        ><br>
         <label for="distance">Distance from Drammen: {{ this.selectedDistance }}km </label>
     </form>
 </div>
