@@ -16,8 +16,9 @@
         <h2>Filtered Hotels</h2>
         <ul>
             <li class="hotel" v-for="hotel in filteredHotels" :key="hotel.name">
-                <h3> {{ hotel.name }} </h3>
-                <p>{{ hotel.link }}</p>
+                <a :href="hotel.link" target="_blank">
+                    <h3> {{ hotel.name }} </h3>
+                </a>
             </li>
         </ul>
     </div>
@@ -45,15 +46,23 @@ export default {
                 { name: "Comfort Hotel Union Brygge", link: "https://www.strawberry.no/hotell/norge/drammen/comfort-hotel-union-brygge/?utm_campaign=gmb-listing&utm_medium=organic&utm_source=google", "distance": 3 }
             ],
             selectedDistance: 500,
-            filteredHotels: null,
         }
     },
     computed: {
-        filter() {
-            filteredHotels = this.hotels.map((hotel) => { hotel.distance <= this.selectedDistance })
+        filteredHotels() {
+            return this.hotels.filter((hotel) => hotel.distance <= this.selectedDistance)
         }
     }
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+li {
+    list-style-type: none;
+    margin-bottom: 40px;
+}
+
+a {
+    color: #2c3e50;
+}
+</style>
